@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+        var idName = "dltnwls7894";
+        var password = "123456789";
+        function login(id,pwd) {
+          if(id == idName ){
+            if (pwd == password) {
+              document.write("반갑습니다^^/");
+            } else {
+              alert("비밀번호를 다시 입력해주세요");
+              document.write("잘못 입력된 비밀번호입니다.");
+            }
+          } else {
+            alert("아이디를 다시 입력해주세요");
+            document.write("잘못 입력된 회원정보입니다.");
+          }
+        }
+
+        var idprompt = prompt("아이디를 입력해주세요");
+        var pwdprompt = prompt("비밀번호를 입력해주세요");
+
+        login(idprompt, pwdprompt);
+    </script>
+  </body>
+</html>
